@@ -1,0 +1,8 @@
+/* .card-bodycake {
+  margin: 50px;
+  margin-top: 12px;
+} */
+.card-body {
+  background: linear-gradient(to right, #b8b8b8, #ffffff);
+  color: rgb(93, 59, 245);
+}

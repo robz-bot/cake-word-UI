@@ -1,0 +1,224 @@
+<app-header></app-header>
+<div class="container">
+  <div class="row g-5">
+    <div class="col-md-5 col-lg-4 order-md-last">
+      <h4 class="d-flex justify-content-between align-items-center mb-3">
+        <span class="text-primary">Your cart</span>
+        <span class="badge bg-primary rounded-pill">1</span>
+      </h4>
+      <ul class="list-group mb-3">
+        <li class="list-group-item d-flex justify-content-between lh-sm">
+          <div>
+            <h6 class="my-0">Cake Details</h6>
+            <small class="text-muted">Simple, Butterfly Cake, Vanilla</small>
+          </div>
+          <span class="text-muted">₹440</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-sm">
+          <div>
+            <h6 class="my-0">Delivery Details</h6>
+            <small class="text-muted">Dinesh, Jul 8,2021 </small>
+          </div>
+          <span class="text-muted">₹50</span>
+        </li>
+
+        <li class="list-group-item d-flex justify-content-between">
+          <span>Total (INR)</span>
+          <strong>₹490</strong>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-7 col-lg-8">
+      <h4 class="mb-3">Cake Details</h4>
+      <form class="needs-validation" novalidate="">
+        <div class="row g-3">
+          <div class="col-md-4">
+            <label for="state" class="form-label">Cake Shape</label>
+            <select class="form-select" id="state" required="">
+              <option value="-1" disabled selected>Choose...</option>
+              <option>Simple</option>
+              <option>Flat</option>
+              <option>Rectangular</option>
+              <option>Circle</option>
+              <option>Heart</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label for="state" class="form-label">Cake Type</label>
+            <select class="form-select" id="state" required="">
+              <option value="-1" disabled selected>Choose...</option>
+              <option>Battenberg cake</option>
+              <option>Brownie Cake</option>
+              <option>Butter Cake</option>
+              <option>Buccellato Cake</option>
+              <option>Butterfly Cake</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label for="state" class="form-label">Cake Flavour</label>
+            <select class="form-select" id="state" required="">
+              <option value="-1" selected disabled>Choose...</option>
+              <option>Chocolate</option>
+              <option>Vanilla</option>
+              <option>Black Forest</option>
+              <option>Pineapple</option>
+              <option>Red Velvet</option>
+            </select>
+          </div>
+          <div class="col-12">
+            <label for="username" class="form-label">Description</label>
+            <div class="input-group has-validation">
+              <textarea
+                type="text"
+                class="form-control"
+                id="username"
+                required=""
+                placeholder="Description goes here..."
+              ></textarea>
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-4" />
+
+        <h4 class="mb-3">Billing</h4>
+        <div class="row g-3">
+          <div class="col-md-3">
+            <label for="state" class="form-label">Weight</label>
+            <input type="text" name="" id="" class="form-control" />
+          </div>
+          <div class="col-md-3">
+            <label for="state" class="form-label">Price</label>
+            <input type="text" name="" id="" class="form-control" />
+          </div>
+          <div class="col-md-3">
+            <label for="state" class="form-label">Quantity</label>
+            <input type="text" name="" id="" class="form-control" />
+          </div>
+          <div class="col-md-3">
+            <label for="state" class="form-label">Tax</label>
+            <input type="text" name="" id="" class="form-control" />
+          </div>
+        </div>
+
+        <hr class="my-4" />
+
+        <h4 class="mb-3">Delivery Details</h4>
+        <div class="row g-3">
+          <div class="col-md-4">
+            <label for="state" class="form-label">Delivery Name</label>
+            <select class="form-select" id="state" required="">
+              <option value="-1" disabled selected>Choose...</option>
+              <option>Ram</option>
+              <option>Raghu</option>
+              <option>Dinesh</option>
+              <option>Somu</option>
+              <option>Ajay</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label for="state" class="form-label">Delivery Date & Time </label>
+            <input type="datetime-local" name="" id="" class="form-control" />
+          </div>
+          <div class="col-md-4">
+            <label for="state" class="form-label">Delivery Charge ₹</label>
+            <input
+              type="text"
+              disabled
+              name=""
+              value="50"
+              id=""
+              class="form-control"
+            />
+          </div>
+        </div>
+
+        <hr class="my-4" />
+
+        <h4 class="mb-3">Payment Details</h4>
+        <div class="row col-md-12 col-sm-12 col-lg-12">
+          <div class="col-md-6 col-sm-6">
+            <div class="my-3">
+              Payment Mode
+              <div class="form-check">
+                <input
+                  id="cod"
+                  name="paymentMethod"
+                  type="radio"
+                  class="form-check-input"
+                  required=""
+                />
+                <label class="form-check-label" for="cod"
+                  >Cash On Delivery</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  id="credit"
+                  name="paymentMethod"
+                  type="radio"
+                  class="form-check-input"
+                  checked=""
+                  required=""
+                />
+                <label class="form-check-label" for="credit">Credit card</label>
+              </div>
+              <div class="form-check">
+                <input
+                  id="debit"
+                  name="paymentMethod"
+                  type="radio"
+                  class="form-check-input"
+                  required=""
+                />
+                <label class="form-check-label" for="debit">Debit card</label>
+              </div>
+              <div class="form-check">
+                <input
+                  id="paypal"
+                  name="paymentMethod"
+                  type="radio"
+                  class="form-check-input"
+                  required=""
+                />
+                <label class="form-check-label" for="paypal">UPI</label>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <h4 class="mb-3"></h4>
+
+            <div class="my-3">
+              Payment Status
+              <div class="form-check">
+                <input
+                  id="paid"
+                  name="paymentStatus"
+                  type="radio"
+                  class="form-check-input"
+                  required=""
+                />
+                <label class="form-check-label" for="paid">Paid</label>
+              </div>
+              <div class="form-check">
+                <input
+                  id="unpaid"
+                  name="paymentStatus"
+                  type="radio"
+                  class="form-check-input"
+                  required=""
+                />
+                <label class="form-check-label" for="unpaid">Unpaid</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="w-100 btn btn-primary btn-lg" type="submit">
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

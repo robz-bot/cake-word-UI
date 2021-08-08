@@ -1,0 +1,111 @@
+<body>
+  <section>
+    <div class="container">
+      <div class="user signinBx">
+        <div class="imgBx">
+          <img
+            src="https://storybrookfarmweddings.com/wp-content/uploads/2018/12/Storybrook-Farm-Petite-Sweets-small-wedding-cake-1140x760.jpg"
+            alt=""
+          />
+        </div>
+        <div class="formBx">
+          <form action="" onsubmit="return false;">
+            <h2>Create an account</h2>
+            <input
+              type="text"
+              name=""
+              placeholder="Username"
+              class="form-control"
+            /><br />
+            <input
+              type="password"
+              name=""
+              placeholder="Create Password"
+              class="form-control"
+            /><br />
+            <input
+              type="password"
+              name=""
+              placeholder="Confirm Password"
+              class="form-control"
+            /><br />
+            <input
+              type="text"
+              name=""
+              placeholder="Email"
+              class="form-control"
+            /><br />
+
+            <input
+              type="text"
+              name=""
+              placeholder="City"
+              class="form-control"
+            /><br />
+            <input
+              type="text"
+              name=""
+              placeholder="Phone Number"
+              class="form-control"
+            /><br />
+            <select class="form-select" id="state" required="">
+              <option value="-1" disabled selected>Choose User Type...</option>
+              <option>Admin</option>
+              <option>Customer</option>
+              <option>Delivery Team</option></select
+            ><br />
+            <input
+              type="submit"
+              name=""
+              value="Sign Up"
+              class="form-control btn-dark"
+            />
+            <p class="signup">
+              Already have an account ?
+              <a href="#" (click)="init()">Sign In.</a>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="user signupBx">
+        <div class="formBx">
+          <form (ngSubmit)="loginUser()">
+            <h2>Sign In</h2>
+            <input
+              type="text"
+              name="username"
+              class="form-control"
+              placeholder="Username"
+              [(ngModel)]="login.username"
+              class="form-control"
+            /><br />
+            <input
+              type="password"
+              name="password"
+              [(ngModel)]="login.password"
+              class="form-control"
+              placeholder="Password"
+              class="form-control"
+            /><br />
+            <input
+              type="submit"
+              name=""
+              value="Login"
+              class="form-control btn-dark"
+            />
+            <p class="signup">
+              Don't have an account ?
+              <a href="#" (click)="init()">Sign Up.</a>
+            </p>
+          </form>
+        </div>
+        <div class="imgBx">
+          <img
+            src="https://i.pinimg.com/originals/8a/1b/6c/8a1b6c7b059229751a5c974bd4b45411.gif"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+</body>

@@ -1,0 +1,241 @@
+<app-header></app-header>
+<div class="container">
+  <div
+    class="
+      d-flex
+      flex-wrap
+      align-items-center
+      justify-content-center justify-content-lg-start
+    "
+  >
+    <a
+      href="/"
+      class="
+        d-flex
+        align-items-center
+        mb-2 mb-lg-0
+        text-dark text-decoration-none
+      "
+    >
+      <svg
+        class="bi me-2"
+        width="40"
+        height="32"
+        role="img"
+        aria-label="Bootstrap"
+      >
+        <use xlink:href="#bootstrap"></use>
+      </svg>
+    </a>
+
+    <ul
+      class="
+        nav
+        col-12 col-lg-auto
+        me-lg-auto
+        mb-2
+        justify-content-center
+        mb-md-0
+      "
+    >
+      <li>
+        <div class="col-md-12">
+          <select class="form-select" id="state" required="">
+            <option value="-1" disabled selected>Category</option>
+            <option>Egg</option>
+            <option>Eggless</option>
+          </select>
+        </div>
+      </li>
+    </ul>
+
+    <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+      <input
+        type="search"
+        class="form-control"
+        placeholder="Search Cake Name"
+        aria-label="Search"
+      />
+    </form>
+  </div>
+
+  <br />
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    <div class="col">
+      <div class="card shadow-sm">
+        <div
+          class="card-bodycake"
+          style="
+            background: url('https://www.bbcgoodfoodme.com/assets/legacy/recipe_images/simnel-battenberg-cake.jpg')
+              no-repeat;
+            width: 100%;
+            height: 400px;
+          "
+        ></div>
+
+        <div class="card-body">
+          <h4 class="card-text">Battenberg cake</h4>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button
+                type="button"
+                class="btn btn-sm btn-outline-dark"
+                (click)="gotoOrder()"
+              >
+                Order
+              </button>
+            </div>
+            <small class="text-liked">200 Liked this 👍</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <div
+          class="card-bodycake"
+          style="
+            background: url('https://www.giftjaipur.com/image/cache/catalog/May-2019/designer-black-forest-cake-500x500.jpg')
+              no-repeat;
+            width: 100%;
+            height: 400px;
+          "
+        ></div>
+
+        <div class="card-body">
+          <h4 class="card-text">Black Forest Cake</h4>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button
+                type="button"
+                class="btn btn-sm btn-outline-dark"
+                (click)="gotoOrder()"
+              >
+                Order
+              </button>
+            </div>
+            <small class="text-liked">200 Liked this 👍</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <div
+          class="card-bodycake"
+          style="
+            background: url('https://www.cookingclassy.com/wp-content/uploads/2020/04/small-batch-brownies-39-500x500.jpg')
+              no-repeat;
+            width: 100%;
+            height: 400px;
+          "
+        ></div>
+
+        <div class="card-body">
+          <h4 class="card-text">Brownie Cake</h4>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button
+                type="button"
+                class="btn btn-sm btn-outline-dark"
+                (click)="gotoOrder()"
+              >
+                Order
+              </button>
+            </div>
+            <small class="text-liked">200 Liked this 👍</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <div
+          class="card-bodycake"
+          style="
+            background: url('https://mariasmenu.com/wp-content/uploads/Orange-Butter-Cake-500x500.png')
+              no-repeat;
+            width: 100%;
+            height: 400px;
+          "
+        ></div>
+
+        <div class="card-body">
+          <h4 class="card-text">Butter Cake</h4>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button
+                type="button"
+                class="btn btn-sm btn-outline-dark"
+                (click)="gotoOrder()"
+              >
+                Order
+              </button>
+            </div>
+            <small class="text-liked">200 Liked this 👍</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <div
+          class="card-bodycake"
+          style="
+            background: url('https://www.unadonna.it/wp-content/uploads/2018/12/iStock-629187260-770x513.jpg')
+              no-repeat;
+            width: 100%;
+            height: 400px;
+          "
+        ></div>
+
+        <div class="card-body">
+          <h4 class="card-text">Buccellato Cake</h4>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button
+                type="button"
+                class="btn btn-sm btn-outline-dark"
+                (click)="gotoOrder()"
+              >
+                Order
+              </button>
+            </div>
+            <small class="text-liked">200 Liked this 👍</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <div
+          class="card-bodycake"
+          style="
+            background: url('https://m.media-amazon.com/images/I/71U+hZit-YL._AC_SX466_.jpg')
+              no-repeat;
+            width: 100%;
+            height: 400px;
+          "
+        ></div>
+
+        <div class="card-body">
+          <h4 class="card-text">Butterfly Cake</h4>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button
+                type="button"
+                class="btn btn-sm btn-outline-dark"
+                (click)="gotoOrder()"
+              >
+                Order
+              </button>
+            </div>
+            <small class="text-liked">200 Liked this 👍</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br /><br />
+<app-footer></app-footer>
